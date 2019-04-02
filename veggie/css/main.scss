@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+$background-color-gray: #f8f8f8;
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'merri';
+}
+
+input {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.mainText {
+    margin: 70px 0px;
+    text-align: center;
+    h2 {
+        font-family: "merri";
+        font-size: 40px;
+        line-height: 1.5;
+    }
+    img {
+        margin-top: 20px;
+    }
+}
+
+
+menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    list-style: none;
+    margin-right: 30px;
+    li {
+        &:hover {
+            border: 1px solid black;
+        }
+        padding: 15px 30px;      
+        a {
+            font-family: "merri";
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+header {
+    background: url('../img/bg12.png') no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-size: cover;
+    position: relative;
+    .headerText {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        right: 5%;
+        h2 {
+            font-family: "merri";
+            font-size: 40px;
+            line-height: 1.5;
+        }
+        img {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+.section-1 {
+    background: url('../img/bg13.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    .food {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img {
+            height: 80px;
+        }
+        h3 {
+            font-size: 18px;
+            padding: 30px 0;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+    }
+}
+
+.section-2 {
+    height: 100vh;
+    .container {
+        flex-wrap: wrap;
+        & :last-child {
+            flex-direction: row-reverse;
+        }
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        .month {
+            min-width: 200px;
+            height: 200px;
+            background-color: $background-color-gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            & :nth-child(4){
+                margin-top: 20px;
+            }
+            hr {
+                width: 60px;
+                margin-bottom: 15px;
+            }
+            img{
+                width: 200px;
+            }
+            h4 {
+                font-size: 18px;
+                font-weight: bold;  
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    
+}
+
+.section-3 {
+    height: 100vh;
+    background-color: #eeefef;
+    .leftside {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        p {
+            font-size: 30px;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .wrapper_img {
+            text-align: right;
+            margin-top: 40px;
+        }
+    }
+    .rightside {
+        width: 50%;
+        height: 720px;
+        overflow: visible;
+        background: url('../img/bg2.png') no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+        z-index: 9999;
+    }
+}
+
+.section-4 {
+    height: 100vh;
+    .container {
+        flex-direction: column;
+        .wrapper_top {
+            .mainText {
+                margin-bottom: 50px;
+            }
+            menu {
+                padding: 0px;
+                margin: 0px 0px 20px 0px;
+                
+            }
+        }
+        .wrapper_menu {
+            display: flex;
+            margin-top: 25px;
+            justify-content: space-between;
+            p {
+                margin-top: 25px;
+                font-size: 16px;
+                span {
+                    font-size: 14px;
+                    font-style: italic;
+                }
+            }
+            .rightMenu {
+                margin-left: 200px;
+            }
+        }
+    }
+    
+}
+
+.section-5 {
+    background: url('../img/bg_contact.png') no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    margin-top: 90px;
+    .container {
+        justify-content: flex-end;
+        .wrapper_contact {
+            max-width: 570px;
+            width: 100%;
+            .info {
+                display: flex;
+                justify-content: space-between;
+                h4 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 1.3;
+                }
+                .rightSide {
+                    margin-left: 20px;
+                }
+            }
+            .contact_form {
+                margin-top: 90px;
+                .account-info {
+                    background: none;
+                    & :last-child {
+                        margin-left: 65px;
+                    }
+                    input {
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        padding: 5px;
+                        width: 250px;
+                    }
+                    legend {
+                        font-size: 18px;
+                        margin-bottom: 30px;
+                    }
+                }
+                .account-message {
+                    margin-top: 55px;
+                    input {
+                        width: 100%;
+                        background: none;
+                        padding: 5px;
+                        border: none;
+                        border-bottom: 1px solid black;
+                    }
+                }
+                .account-action {
+                    text-align: center;
+                    margin-top: 45px;
+                    input {
+                        background: none;
+                        border: 1px solid black;
+                        padding: 15px 25px;
+                    }
+                }
+            }
+        }
+    }
+}
