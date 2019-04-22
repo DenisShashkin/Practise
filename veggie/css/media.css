@@ -161,6 +161,9 @@
         padding: 10px 15px;
 
     }
+    .section-4 .container .wrapper_menu .leftMenu span {
+        font-size: 10px;
+    }
     .section-4 .container .wrapper_top menu {
         margin: 0;
     }
@@ -174,7 +177,7 @@
         font-size: 14px;
     }
     .section-4 .container .wrapper_menu p {
-        font-size: 11px;
+        font-size: 10px;
     }
     .section-5 .info {
         text-align: center;
