@@ -157,7 +157,18 @@
         flex-direction: column;
         align-items: center;
     }
-    .section-4 .wrapper_top menu li {
+    .section-4 .tabs .tabs__caption {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+    .section-4 .tabs .tabs__caption li {
+        padding: 10px;
+    }
+    .section-4 .tabs .tabs__content {
+        justify-content: center;
+    }
+    .section-4 .wrapper_top  li {
         padding: 10px;
 
     }
