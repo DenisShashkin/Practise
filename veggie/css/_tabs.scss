@@ -1,0 +1,35 @@
+.tabs {
+  width: 100%;
+}
+.tabs__caption {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+  justify-content: center;
+  li {
+    padding: 15px 30px;
+    border: 1px solid rgba(0,0,0,0); 
+    font-size: 18px;
+    &:not(.active) {
+      cursor: pointer;
+    }
+  }
+  .active {
+    border: 1px solid rgba(0,0,0,1);
+  }
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content.active {
+  display: flex;
+  justify-content: space-between;
+}
+
